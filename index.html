@@ -9,6 +9,9 @@ html {
   background-image: url(nh_umbagog_park_map.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  font-family: 'Nova Square', cursive;
+  text-shadow: 2px 2px 4px #000000;
+
 }  
 div {
   margin: 30px;
@@ -20,20 +23,39 @@ div {
 p {
   margin: 5%;
   text-align: center;
-	font-family: 'Nova Square', cursive;
-	font-size: 350%;
+  opacity: 1 !important;
+
+}
+ul {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  list-style-type: none;
+  font-size: 120%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.countdown {
+	font-size: 200%;
   font-weight: bold;
   color: #B22222;
-  text-shadow: 2px 2px 4px #000000;
-  opacity: 1 !important;
 }
 </style>
 </head>
 <body>
   <div>
-    <p style="opacity: 1;">Umbagog Departure In:</p>
+    <p class="countdown" style="opacity: 1;">Umbagog Departure In:</p>
 
-    <p id="demo"></p>
+    <p class="countdown" id="demo"></p>
+
+    <ul>Errol Weather Links:
+      <li><a href="https://weather.com/weather/monthly/l/267e692668bb35a295b59200880bc3427eb5d015957788f53a39b5439835de42" target="_BLANK">Weather Channel</a></li>
+      <li><a href="https://www.accuweather.com/en/us/errol-nh/03579/july-weather/344412" target="_BLANK">Accuweather</a></li>
+      <li><a href="https://www.wunderground.com/calendar/us/nh/errol/KAUG/date/2019-7" target="_BLANK">Weather Underground</a></li>
+      <li><a href="https://forecast.weather.gov/MapClick.php?lat=44.7809&lon=-71.1373#.XSdOu-hKhhF" target="_BLANK">Nat. Weather Service</a></li>
+    </ul>
 </div>
 
 <script>
