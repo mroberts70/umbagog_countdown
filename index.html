@@ -64,7 +64,9 @@ a:hover, a:active, a:focus {
   color: #ff6600;
   
 }
-	
+#demo {
+  font-size: 300%;
+  color: red;
 </style>
 </head>
 <body>
@@ -108,7 +110,7 @@ var x = setInterval(function() {
   }
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " DAYS<br>to departure";
+  document.getElementById("demo").innerHTML = days + " DAYS";
     
   // If the count down is over, write some text 
   if (distance < 0) {
@@ -118,5 +120,6 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+	<p class="countdown shadow">to departure</p>
 </body>
 </html>
