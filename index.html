@@ -102,11 +102,12 @@ li:hover, li:active, li:focus {
 </head>
 <body>
   <div>
-	<div>
-	  <p class="countdown shadow allcaps">The <b>8<small><sup>th</sup></small></b> Annual<br>
+	
+	<p class="countdown shadow allcaps">The <b>8<small><sup>th</sup></small></b> Annual<br>
 		<img class="shroom" src=mushroom.png> Umbagog <img class="shroom" src=mushroom.png>
 		 <br>Camping Trip Countdown:
-	  </p>
+	</p>
+	<div id="text">  
 	  <p class="countdown shadow" id="demo"></p>
 	  <p class="countdown shadow">to departure</p>
 	  <p id="departuredate"><img class="shroom" src=mushroom.png> [Mon Jul 19 2021] <img class="shroom" src=mushroom.png></p>
@@ -152,7 +153,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Let's GOOOOOOOOOOO!";
+    document.getElementById("text").innerHTML = "LET'S DO THIS!";
   }
 }, 1000);
 </script>
