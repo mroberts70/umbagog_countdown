@@ -18,18 +18,19 @@
 </head>
 <body>
     <header>
+        <img class="logo-image" src="images/mushroom.png">
         <div>
-            <p>The <span class="shadytext big-text">9<sup>th</sup></span> Annual</p>
-            <p class="allcaps"><img class="shroom" src="images/mushroom.png"> Umbagog <img class="shroom" src="images/mushroom.png"></p>
+            <p>The 9<sup>th</sup> Annual</p>
+            <p class="allcaps big-text">Umbagog</p>
             <p>Camping Trip Countdown:</p>
         </div>
     </header>
 
     <main>
         <div class="countdown">
-            <p class="shadytext big-text" id="the-countdown"></p>
+            <p class="the-countdown" id="the-countdown"></p>
             <p>to departure</p>
-            <p><img class="shroom" src="images/mushroom.png"> [Mon Jun 27 2022] <img class="shroom" src="images/mushroom.png"></p>
+            <p>[Mon Jun 27 2022]</p>
         </div>
         <div>
             <ul><b>Errol Weather Links:</b>
@@ -83,7 +84,7 @@
           }
             
           // Output the result in an element with id="demo"
-          document.getElementById("the-countdown").innerHTML = days + " DAYS";
+          document.getElementById("the-countdown").innerHTML = days + "<br>DAYS";
             
           // If the count down is over, write some text 
           if (distance < 0) {
