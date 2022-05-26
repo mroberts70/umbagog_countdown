@@ -38,6 +38,9 @@ header {
     flex-direction: row;
     box-shadow: 0 3px 15px 0 gray;
 }
+.last {
+    margin-bottom: 100px;
+}
 .logo-image {
     margin: .5em;
     max-width: 125px;
