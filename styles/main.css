@@ -107,13 +107,17 @@ li:hover {
 }
 .the-countdown {
     margin: .75em;
-    background-color: silver;
+    background-image: url("../images/20200713_135121.jpg");
+    background-size: cover;
+    background-color: blue;
+    background-blend-mode:lighten;
     border: 3px ridge darkorange;
     border-radius: 50%;
     box-shadow: .5em 0 10px 0 gold, -.5em 0 10px 0 gold, 0 -.5em 10px 0 gold, 0 .5em 10px 0 gold;
     text-align: center;
     padding: 1em;
     font-size: 3rem;
+    text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white, -1px -1px 1px white;
 }
 
 sup {
