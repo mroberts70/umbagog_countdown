@@ -11,11 +11,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
-    height: 100vh;
 }  
 body {
-    overflow-x: hidden;
     font-family: Madurai, Arial, Helvetica, sans-serif;
     font-size: 130%;
     font-weight: 600;
@@ -27,12 +24,11 @@ body {
     align-items: center;
     background-color: whitesmoke;
     opacity: .9;
-    min-height: 100vh;
-    height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 header {
-    width: 100vw;
+    width: 100%;
     background-color: black;
     color: white;
     display: flex;
@@ -103,18 +99,19 @@ li:hover {
 }
 .countdown {
     font-size: 150%;
+    font-weight: 900;
     text-align: center;
+    font-variant: small-caps;
 }
 .the-countdown {
     margin: .75em;
     background-color: silver;
-    border: 3px ridge silver;
+    border: 6px ridge orange;
     border-radius: 50%;
     box-shadow: .5em 0 10px 0 gold, -.5em 0 10px 0 gold, 0 -.5em 10px 0 gold, 0 .5em 10px 0 gold;
     text-align: center;
     padding: 1em;
     font-size: 3rem;
-    font-weight: 900;
 }
 
 sup {
@@ -135,14 +132,13 @@ footer {
     justify-self: flex-end;
     align-self: flex-end;
     box-shadow: 0 -3px 15px 0 gray;
-
 }
 
 @media (max-width: 420px) {
 
     body {
         font-size: 100%;
-        width: 100vw;
+        width: 100%;
 
     }
 }
