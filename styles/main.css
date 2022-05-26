@@ -62,10 +62,13 @@ ul {
     align-items: stretch;
     gap: .5em;
 }
+ul span {
+    text-align: center;
+}
 li {
     font-weight: bold;
     background-color: orange;
-    border: 3px ridge darkorange;
+    border: 3px ridge black;
     border-radius: 5px;
     transition: all .5s;
 }
@@ -110,16 +113,17 @@ li:hover {
 }
 .the-countdown {
     margin: .75em;
+    padding: 1em;
     background-image: url("../images/20200713_135121.jpg");
     background-size: cover;
     background-color: blue;
     background-blend-mode:lighten;
     border: 3px ridge darkorange;
     border-radius: 50%;
-    box-shadow: .5em 0 10px 0 gold, -.5em 0 10px 0 gold, 0 -.5em 10px 0 gold, 0 .5em 10px 0 gold;
+    box-shadow: .5em 0 10px 0 orange, -.5em 0 10px 0 orange, 0 -.5em 10px 0 orange, 0 .5em 10px 0 orange;
     text-align: center;
-    padding: 1em;
     font-size: 3rem;
+    color: black;
     text-shadow: 1px 1px 1px orange, -1px 1px 1px orange, 1px -1px 1px orange, -1px -1px 1px orange;
 }
 
