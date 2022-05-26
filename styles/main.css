@@ -162,6 +162,9 @@ footer {
     .big-text {
         font-size: 150%;
     }
+    footer {
+        position: relative;
+    }
 }
 @media (max-width: 300px) {
     body {
