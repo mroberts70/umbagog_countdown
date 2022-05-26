@@ -41,6 +41,7 @@ header {
 .logo-image {
     margin: .5em;
     max-width: 125px;
+    border-radius: 50%;
 }
 header div {
     display: flex;
@@ -132,6 +133,7 @@ footer {
     justify-self: flex-end;
     align-self: flex-end;
     box-shadow: 0 -3px 15px 0 gray;
+    font-variant: small-caps;
 }
 
 @media (max-width: 420px) {
