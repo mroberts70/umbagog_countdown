@@ -75,14 +75,18 @@ a {
     font-size: 105%;
     transition: all .5s;  
 }
-a:link, a:visited {
+a:link, a:visited, a:active, a:focus {
     color: black;
 }
-a:hover, a:active, a:focus {
+li:focus, li:active {
+    background-color: #fed8b1;
+    border: 3px solid silver;
+}
+a:hover {
     text-decoration: none;
     color: blueviolet;
 }
-li:hover, li:active, li:focus {
+li:hover {
     background-color: yellowgreen;
     border: 3px solid blueviolet;
 }
