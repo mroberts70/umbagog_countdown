@@ -54,11 +54,20 @@ main div {
 main div:last-child {
     margin-bottom: 100px;
 }
+.spacer-p {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+}
 .logo-image {
     margin: .5em 1.5em .5em auto;
     max-width: 125px;
     border: 4px double darkorange;
     border-radius: 50%;
+}
+.shroom {
+    max-width: 30px;
+    
 }
 header div {
     margin-right: auto;
