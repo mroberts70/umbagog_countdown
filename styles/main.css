@@ -5,8 +5,8 @@
 }
 html {
     background-image: url("../images/nh_umbagog_park_map.jpg");
-    background-color: rgb(232, 240, 250);
-    background-blend-mode: multiply;
+    background-color: lightblue;
+    background-blend-mode:lighten;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,8 +23,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: whitesmoke;
-    opacity: .9;
+    /* background-color: whitesmoke; */
+    /* opacity: .9; */
     position: relative;
     overflow-x: hidden;
 }
