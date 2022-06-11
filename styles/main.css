@@ -11,13 +11,15 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }  
 body {
-    font-family: Madurai, Arial, Helvetica, sans-serif;
-    font-size: 130%;
+    font-family: Boogaloo, Arial, Helvetica, sans-serif;
+    font-size: 170%;
     font-weight: 600;
-    max-width: 50vw;
+    /* max-width: 50vw; */
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -38,10 +40,13 @@ header {
 }
 main {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
+    align-content: center;
+    gap: 2.5em;
 }
 main div {
     margin-bottom: 1em;
@@ -50,12 +55,13 @@ main div:last-child {
     margin-bottom: 100px;
 }
 .logo-image {
-    margin: .5em;
+    margin: .5em 1.5em .5em auto;
     max-width: 125px;
     border: 4px double darkorange;
     border-radius: 50%;
 }
 header div {
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,12 +171,16 @@ footer {
 @media (max-width: 900px) {
     body {
         max-width: 100%;
+        height: auto;
     }
     main {
         flex-direction: column;        
     }
     .big-text {
         font-size: 150%;
+    }
+    .logo-image {
+        margin: .5em;
     }
     footer {
         position: relative;
