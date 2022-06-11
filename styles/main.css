@@ -180,7 +180,8 @@ footer {
         height: auto;
     }
     main {
-        flex-direction: column;        
+        flex-direction: column;
+        gap: 0;    
     }
     .big-text {
         font-size: 150%;
