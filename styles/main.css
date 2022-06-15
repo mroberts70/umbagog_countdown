@@ -129,7 +129,7 @@ li:hover {
     font-weight: 900;
 }
 .text-outline {
-    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange, 1px -1px 1px orange, -1px -1px 1px orange;
+    text-shadow: 1px 1px 1px darkorange, -1px 1px 1px darkorange, 1px -1px 1px darkorange, -1px -1px 1px darkorange;
 }
 .glow-text {
     font-size: 120%;
