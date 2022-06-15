@@ -11,7 +11,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
 }  
 body {
     font-family: Boogaloo, Arial, Helvetica, sans-serif;
@@ -37,15 +37,15 @@ header {
     display: flex;
     flex-direction: row;
     box-shadow: 0 3px 15px 0 gray;
+    margin-bottom: 25px;
 }
 main {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
+    justify-content:space-evenly;
+    align-items: flex-start;
     gap: 2.5em;
 }
 main div {
@@ -100,7 +100,6 @@ a {
     display: block;
     padding: 1em;
     font-size: 105%;
-    
     transition: all .5s;  
 }
 a:link, a:visited, a:active, a:focus {
@@ -112,11 +111,11 @@ li:focus, li:active {
 }
 a:hover {
     text-decoration: none;
-    color: blueviolet;
+    color: yellow;
 }
 li:hover {
-    background-color: yellowgreen;
-    border: 3px ridge blueviolet;
+    background-color: black;
+    border: 3px ridge yellow;
 }
 .shadytext {
     font-weight: bold;
@@ -137,7 +136,11 @@ li:hover {
     color: white;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
+.boxy-shadow {
+    box-shadow: 4px 4px 15px 1px black;
+}
 .countdown {
+    order: 2;
     font-size: 150%;
     font-weight: 900;
     text-align: center;
@@ -157,11 +160,67 @@ li:hover {
     font-size: 3rem;
     color: black;
 }
-
+.weather {
+    order: 1;
+}
 sup {
     font-size: 60%;
     text-align: top;
 }
+
+h5 {
+    margin-block: .25em;
+    font-style: italic;
+}
+.activities {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.activity {
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px ridge black;
+    border-radius: 15px;
+    padding: .15em;
+
+}
+.activity p {
+    font-size: 80%;
+    margin: .1em;
+    background-color: #555555;
+    border: 3px solid #555555;
+    border-radius: 15px;
+    transition: all ease-in-out 300ms;
+}
+.activity a {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    padding: .5em;
+    transition: all ease-in-out 300ms;
+}
+.activity p:hover {
+    border: 3px ridge yellow;
+    background-color: black;
+}
+.activity a:hover {
+    color: yellow;
+}
+.activity-image {
+    max-width: 300px;
+    border: 3px ridge black;
+    border-radius: 15px;
+    transition: all ease-in-out 300ms;
+}
+.activity-image:hover {
+    border: 3px ridge yellow;
+}
+
 footer {
     background-color: black;
     color: darkorange;
@@ -182,12 +241,20 @@ footer {
     main {
         flex-direction: column;
         gap: 0;    
+        justify-content: center;
+        align-items: center;
     }
     .big-text {
         font-size: 150%;
     }
     .logo-image {
         margin: .5em;
+    }
+    .countdown {
+        order: 1;
+    }
+    .weather {
+        order: 2;
     }
     footer {
         position: relative;
