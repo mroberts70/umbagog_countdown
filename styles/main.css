@@ -173,6 +173,20 @@ li:hover {
     font-size: 3rem;
     color: black;
 }
+form {
+    width: 80%;
+    font-size: 50%;
+}
+
+form fieldset {
+    padding: .5em;
+}
+fieldset div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .25em;
+}
 .weather {
     order: 1;
 }
