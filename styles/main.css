@@ -51,19 +51,23 @@ main {
 main div {
     margin-bottom: .25em;
 }
-/* main div:last-child {
-    margin-bottom: 100px;
-} */
 .spacer-p {
     display: flex;
-    align-items: center;
+    align-self: center;
     gap: .25em;
 }
 .logo-image {
+    background-image: url("../images/party-boat.jpg");
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
     margin: .5em 1.5em .5em auto;
-    max-width: 125px;
+    width: 125px;
     border: 4px double darkorange;
     border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .shroom {
     max-width: 30px;
@@ -128,6 +132,13 @@ li:hover {
     font-size: 250%;
     font-weight: 900;
 }
+.small-text {
+    margin: .5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40%;
+    font-weight: 200;
+    max-width: 275px;
+}
 .text-outline {
     text-shadow: 1px 1px 1px orange, -1px 1px 1px orange, 1px -1px 1px orange, -1px -1px 1px orange;
 }
@@ -141,6 +152,8 @@ li:hover {
 }
 .countdown {
     order: 2;
+    display: flex;
+    flex-direction: column;
     font-size: 150%;
     font-weight: 900;
     text-align: center;
@@ -201,7 +214,7 @@ h5 {
     display: block;
     text-transform: uppercase;
     color: white;
-    padding: .5em;
+    padding: .25em;
     transition: all ease-in-out 300ms;
 }
 .activity p:hover {
@@ -220,21 +233,29 @@ h5 {
 .activity-image:hover {
     border: 3px ridge yellow;
 }
-
+.shroooms {
+    display: flex;
+    justify-content: center;
+}
 footer {
     margin-top: 100px;
     background-color: black;
     color: darkorange;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    height: 70px;
+    height: 100px;
     font-size: 70%;
     box-shadow: 0 -3px 15px 0 gray;
     text-transform: uppercase;
 }
 @media (max-width: 900px) {
+    * { 
+        max-width: 100%;
+        align-items: stretch;
+    }
     body {
         max-width: 100%;
         height: auto;
@@ -243,7 +264,7 @@ footer {
         flex-direction: column;
         gap: 0;    
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
     }
     .big-text {
         font-size: 150%;
@@ -256,6 +277,20 @@ footer {
     }
     .weather {
         order: 2;
+    }
+    .activities {
+        align-items: stretch;
+    }
+    .activity {
+        border: none;
+        border-radius: 0;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-bottom: .75em;
+    }
+    .activity-image {
+        max-width: 100%;
+        margin: 0;
     }
     footer {
         position: relative;
