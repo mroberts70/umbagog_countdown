@@ -94,6 +94,16 @@
                 <p class="boxy-shadow"><a href="https://www.google.com/maps/dir/L.L.+Cote,+Main+Street,+Errol,+NH/beaver+brook+falls+colebrook+nh/@44.8507993,-71.3873404,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4cb6ad558fb5517f:0x8a9d3d09de756578!2m2!1d-71.1374294!2d44.781559!1m5!1m1!1s0x4cb6be0f830cce99:0x41a4b5c93f79ed56!2m2!1d-71.4642727!2d44.9198867" target="_blank" rel="noopener noreferrer">33 Minutes from L.L. Cote</a></p>
                 <p class="boxy-shadow"><a href="https://www.google.com/maps/dir/Table+Rock,+Dixville+Township,+NH+03576/beaver+brook+falls+colebrook+nh/@44.8912107,-71.4339013,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4cb6ba76a2f14a23:0xbe847c100be9883d!2m2!1d-71.3034134!2d44.8622701!1m5!1m1!1s0x4cb6be0f830cce99:0x41a4b5c93f79ed56!2m2!1d-71.4642727!2d44.9198867" target="_blank" rel="noopener noreferrer">(19 Minutes from Table Rock)</a></p>
             </div>
+            <div class="activity">
+                <h4>Campfire Tip:</h4>
+                <img class="activity-image img-preview" id="myImg" src="images/how-to-build-a-long-lasting-fire.png" alt="How to build a campfire that will last all night">
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img id="img01" class="modal-content">
+                <div id="caption"></div>
+            </div>
 
 
         </div>
@@ -119,7 +129,7 @@
 
 
 
-
+    <!-- Javascript - Countdown Timer -->
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Jun 28, 2022 00:00:00").getTime();
@@ -152,10 +162,36 @@
           // If the count down is over, write some text 
           if (distance < 0) {
             clearInterval(x);
-            document.getElementById("the-countdown").innerHTML = "Goodbye World!";
+            document.getElementById("the-countdown").innerHTML = "<img src='images/mushroom.png'>";
           }
         }, 1000);
         </script>
+
+
+        <!-- Javascript - Modal Image Box -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+    
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+    
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+    
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+
         
 
 
