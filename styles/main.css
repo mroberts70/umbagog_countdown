@@ -144,8 +144,11 @@ fieldset legend {
     order: 1;
 }
 .weather li {
-    width: 80%;
+    width: 90%;
     margin: 5px auto;
+}
+.weather li a {
+    padding: .5em;
 }
 sup {
     font-size: 60%;
@@ -163,7 +166,7 @@ h5 {
 }
 .activity {
     background-color: darkorange;
-    padding: 10px;
+    padding: .5em;
 }
 .activity p {
     font-size: 80%;
