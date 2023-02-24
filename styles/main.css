@@ -115,11 +115,9 @@ li:hover {
     border: 3px ridge darkorange;
     border-radius: 50%;
     box-shadow: .5em 0 10px 0 darkorange, -.5em 0 10px 0 darkorange, 0 -.5em 10px 0 darkorange, 0 .5em 10px 0 darkorange;
-    text-align: center;
-    font-size: 3rem;
+    font-size: 300%;
     color: black;
-    align-self: center;
-    margin: 0 auto;
+    margin: 30px auto;
     max-width: 300px;
     max-height: 300px;
     width: 100%;
@@ -139,7 +137,8 @@ form {
 form fieldset {
     padding: .5em;
 }
-fieldset div {
+fieldset legend {
+    padding: .5em;
 }
 .weather {
     order: 1;
