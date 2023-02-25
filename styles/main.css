@@ -105,6 +105,8 @@ li:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 .the-countdown {
