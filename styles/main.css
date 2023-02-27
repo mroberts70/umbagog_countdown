@@ -99,6 +99,8 @@ li:hover {
 }
 .boxy-shadow {
     box-shadow: 1px 4px 10px 0 black;
+    padding: 1vw;
+    text-align: center;
 }
 .countdown {
     order: 2;
