@@ -8,12 +8,13 @@ img {
     display: block;
 }
 a {
-    font-weight: 500;
+    font-weight: bolder;
     font-variant: small-caps;
     text-decoration: none;
 }
 a:link, a:visited {
-    color: white;
+    /* color: white; */
+    color: gray;
 }
 a:active, a:focus, a:hover {
     color:rgb(206, 113, 0);
