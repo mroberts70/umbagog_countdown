@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="images/beaver-brook-falls.jpg" alt="">
+        <img src="images/shroom-changingcolors-animated.gif" alt="">
         <h1><span class="glow-text">10<sup>th</sup></span> Annual Umbagog Camping Trip Countdown</h1>
     </header>
 
@@ -22,63 +22,18 @@
 
         <div class="weather">
             <ul><h2>Errol Weather Links</h2>
-                <li><a href="https://weather.com/weather/tenday/l/267e692668bb35a295b59200880bc3427eb5d015957788f53a39b5439835de42" target="_BLANK">Weather Channel </a></li>
-                <li><a href="https://www.accuweather.com/en/us/errol-nh/03579/daily-weather-forecast/344412?day=1" target="_BLANK">Accuweather </a></li>
-                <li><a href="https://www.wunderground.com/forecast/us/nh/errol/03579?cm_ven=localwx_10day" target="_BLANK">Weather Underground </a></li>
+                <li><a href="https://weather.com/weather/tenday/l/267e692668bb35a295b59200880bc3427eb5d015957788f53a39b5439835de42" target="_BLANK"><img src="images/mushroom.png" alt="">Weather Channel </a></li>
+                <li><a href="https://www.accuweather.com/en/us/errol-nh/03579/daily-weather-forecast/344412?day=1" target="_BLANK"><img src="images/mushroom.png" alt="">Accuweather </a></li>
+                <li><a href="https://www.wunderground.com/forecast/us/nh/errol/03579?cm_ven=localwx_10day" target="_BLANK"><img src="images/mushroom.png" alt="">Weather Underground </a></li>
             </ul>      
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2014-<span id="current-year"></span> Mike Roberts</p>
+        <img src="images/shroom-psychedelic-ally.jpg" alt="">
+        <p>&copy; 2014-<span id="copyright"></span> Mike Roberts</p>
    </footer>
-
-    <!-- Javascript - Get Current Year for the Footer -->
-	<script>
-        window.onload = function() {
-            var d = new Date();
-            document.getElementById("current-year").innerHTML = d.getFullYear();
-        }
-    </script>
-
-
-
-    <!-- Javascript - Countdown Timer -->
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jul 17, 2023 00:00:00").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          if (minutes < 10) {
-              minutes = "0" + minutes;
-          }
-          if (seconds < 10) {
-              seconds = "0" + seconds;
-          }
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("the-countdown").innerHTML = days + " DAYS TO DEPARTURE!";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("the-countdown").innerHTML = "<img src='images/mushroom.png'>";
-          }
-        }, 1000);
-        </script>
+   
+   <script src="js/scripts.js"></script>
 </body>
 </html>
