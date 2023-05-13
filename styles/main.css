@@ -81,14 +81,15 @@ main {
 .weather a {
     display: block;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border: 1px solid black;
     border-radius: 7px;
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 .weather a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
 }
 .activities {
     order: 3;
