@@ -1,366 +1,106 @@
 * { 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    font-weight: 500;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: white;
+}
+a:active, a:focus, a:hover {
+    color:rgb(206, 113, 0);
+}
+
 html {
-    background-image: url("../images/nh_umbagog_park_map.jpg");
-    background-color: lightblue;
-    background-blend-mode:lighten;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}  
+    color-scheme: light dark;
+    min-height: 100%;
+}
 body {
-    font-family: Boogaloo, Arial, Helvetica, sans-serif;
-    font-size: 170%;
-    font-weight: 600;
+    min-height: 100vh;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header {
-    background-color: black;
-    color: tan;
-    margin-bottom: 25px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+header img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 1rem;
 }
 main {
     display: flex;
-    justify-content: space-evenly;
-}
-main div {
-    margin-bottom: .25em;
-}
-.logo-image {
-    background-image: url("../images/party-boat.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 125px;
-    border: 4px double tan;
-    border-radius: 50%;
-}
-header div {
-}
-ul {
-    list-style-type: none;
-}
-ul span {
-    text-align: center;
-}
-li {
-    font-weight: bold;
-    background-color: tan;
-    border: 3px ridge black;
-    border-radius: 5px;
-    transition: all ease-in-out 300ms;
-}
-a {
-    text-decoration: none;
-    display: block;
-    transition: all ease-in-out 300ms;  
-}
-a:link, a:visited, a:active, a:focus {
-    color: black;
-}
-li:focus, li:active {
-    background-color: #fed8b1;
-}
-a:hover {
-    text-decoration: none;
-    color: yellow;
-}
-li:hover {
-    background-color: black;
-    border: 3px ridge yellow;
-}
-.shadytext {
-    font-weight: bold;
-    text-shadow: 1px 1px 10px gray;
-}
-.allcaps {
-    font-variant: small-caps;
-}
-.big-text {
-    font-size: 250%;
-    font-weight: 900;
-}
-.small-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40%;
-    font-weight: 200;
-}
-.text-outline {
-    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange, 1px -1px 1px orange, -1px -1px 1px orange;
-}
-.glow-text {
-    font-size: 120%;
-    color: white;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-}
-.boxy-shadow {
-    box-shadow: 1px 4px 10px 0 black;
-    padding: 1vw;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 .countdown {
-    order: 2;
-    text-align: center;
+    height: min(40vh, 60vh - 4rem);
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-.the-countdown {
-    background-image: url("../images/20200713_135121.jpg");
-    background-size: cover;
-    background-color: blue;
-    background-blend-mode:lighten;
-    border: 3px ridge tan;
-    border-radius: 50%;
-    box-shadow: .5em 0 10px 0 tan, -.5em 0 10px 0 tan, 0 -.5em 10px 0 tan, 0 .5em 10px 0 tan;
-    font-size: 300%;
-    color: black;
-    margin: 30px auto;
-    max-width: 300px;
-    max-height: 300px;
-    width: 100%;
-    height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 2rem;
 }
-.checklist {
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-}
-form {
-    font-size: 50%;
-    width: 80%;
-    margin: 10px auto;
-}
-
-form fieldset {
-    padding: .5em;
-}
-fieldset legend {
-    padding: .5em;
+.the-countdown {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(206, 113, 0);
 }
 .weather {
     order: 1;
+    display: flex;
+    flex-direction: column;
+}
+.weather ul {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    list-style-type: none;
 }
 .weather li {
-    width: 90%;
-    margin: 5px auto;
+    /* margin-left: 4rem; */
 }
-.weather li a {
-    padding: .5em;
+.weather a {
+    display: block;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
 }
-sup {
-    font-size: 60%;
-    text-align: top;
-}
-
-h5 {
-    font-style: italic;
+.weather a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .activities {
     order: 3;
 }
-.activities h2 {
-    text-align: center;
-}
-.activity {
-    background-color: tan;
-    padding: 0.5em;
-    border-radius: 10px;
-
-}
-.activity p {
-    font-size: 80%;
-    background-color: #555555;
-    border: 3px solid #232323;
-    border-radius: 15px;
-    transition: all ease-in-out 300ms;
-}
-.activity a {
-    display: block;
-    text-transform: uppercase;
-    color: white;
-    transition: all ease-in-out 300ms;
-}
-.activity p:hover {
-    border: 3px ridge yellow;
-    background-color: black;
-}
-.activity a:hover {
-    color: yellow;
-}
-.activity-image {
-    max-width: 300px;
-    border: 3px ridge black;
-    border-radius: 15px;
-    transition: all ease-in-out 300ms;
-}
-.activity-image:hover {
-    border: 3px ridge yellow;
-}
-#myImg {
-    cursor: pointer;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  /* overflow: auto; Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
 
 footer {
-    margin-top: 100px;
-    background-color: black;
-    color: tan;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    font-size: 70%;
-    box-shadow: 0 -3px 15px 0 gray;
-    text-transform: uppercase;
+    position: sticky;
+    top: 100%;
+    padding: 2rem 0;
 }
+
 @media (max-width: 900px) {
-    * { 
-        max-width: 100%;
-        align-items: stretch;
-    }
-    body {
-        max-width: 100%;
-        height: auto;
-    }
-    main {
+}
+@media (max-width: 767px) {
+    header {
         flex-direction: column;
-        gap: 0;    
-        justify-content: center;
-        align-items: stretch;
-    }
-    .big-text {
-        font-size: 150%;
-    }
-    .logo-image {
-        margin: .5em;
-    }
-    .countdown {
-        order: 1;
-    }
-    .weather {
-        order: 2;
-    }
-    .activities {
-        align-items: stretch;
-    }
-    .activity {
-        border: none;
-        border-radius: 0;
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
-        margin-bottom: .75em;
-    }
-    .activity-image {
-        max-width: 100%;
-        margin: 0;
-    }
-    .modal {
-        padding-top: 100px;
-    }
-    .modal-content {
-        width: 100%;
-      }
-    footer {
-        position: relative;
+        text-align: center;
+        font-size: .9rem;
     }
 }
-@media (max-width: 600px) {
-    .the-countdown {
-        max-width: 75%;
-        max-height: 75%;
-    }
-    .checklist {
-        width: 100%;
-    }
-}
-@media (max-width: 300px) {
-    body {
-        font-size: 85%;
-    }
-    .big-text {
-        font-size: 100%;
-    }
+@media (max-width: 490px) {
 }
