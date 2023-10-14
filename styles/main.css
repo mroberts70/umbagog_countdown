@@ -143,6 +143,9 @@ footer p {
         font-size: .9rem;
         padding: 0 1rem;
     }
+    .the-countdown {
+        font-size: 3rem;
+    }
     .history li {
         padding: 0 .5em;
         font-size: 1.15rem;
