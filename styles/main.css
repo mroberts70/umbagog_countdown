@@ -55,7 +55,7 @@ main {
 }
 .the-countdown {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     color: rgb(206, 113, 0);
 }
@@ -64,8 +64,9 @@ main {
     display: flex;
     flex-direction: column;
 }
-.weather h2 {
+h2 {
     text-align: center;
+    font-size: 2.5rem;
 }
 .weather ul {
     display: flex;
@@ -102,6 +103,11 @@ main {
 .activity {
     border: 3px solid rgb(206, 113, 0);
 }
+
+.history li {
+    margin-left: 15%;
+}
+
 .caption {
     background-color: rgb(206, 113, 0);
     padding: 1rem;

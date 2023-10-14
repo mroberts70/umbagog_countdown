@@ -2,7 +2,7 @@ document.querySelector('#copyright').textContent = new Date().getFullYear();
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 17, 2023 00:00:00").getTime();
+var countDownDate = new Date("Jul 29, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
