@@ -117,6 +117,14 @@ h2 {
     width: 100%;
     margin: 2rem auto 0;
 }
+table td {
+    padding: .35em;
+    border: 1px solid whitesmoke;
+}
+table tr:nth-of-type(odd) {
+    background-color: rgb(66, 65, 65);
+}
+
 footer {
     background-image: conic-gradient(from 90deg at 25% -10%, #cc5c00, #7bee85, #01830b, #afeeee, #01830b);
     position: sticky;
